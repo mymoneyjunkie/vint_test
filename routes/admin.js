@@ -23,6 +23,10 @@ import {
 
 const adminRouter = Router();
 
+adminRouter.get("/", (req, res) => {
+  return res.send("hello world...");
+})
+
 adminRouter.post("/login",
 	[
 		body("name")
